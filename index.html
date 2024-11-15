@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Pemrograman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>Kuis Pemrograman</h2>
+        <div id="question-container">
+            <p id="question"></p>
+            <div id="choices">
+                <button class="choice" onclick="checkAnswer(0)"></button>
+                <button class="choice" onclick="checkAnswer(1)"></button>
+                <button class="choice" onclick="checkAnswer(2)"></button>
+                <button class="choice" onclick="checkAnswer(3)"></button>
+            </div>
+        </div>
+        <div id="result-container" class="hidden">
+            <h3>Kuis Selesai!</h3>
+            <p id="score"></p>
+            <button onclick="startQuiz()">Mulai Lagi</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
